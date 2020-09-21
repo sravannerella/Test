@@ -1,2 +1,8 @@
 # Test
-This is a sample git repository test 
+
+This is a sample git repository test.
+
+Members:
+- Sateesh
+- Divya
+- Gayatri
