@@ -7,6 +7,6 @@ Members:
 - Divya
 - Gayatri
 
-I added subscription class to Test project.
-It contains data like User Id, User Name,Subscription Id and Payment Type.
+Gayathri Gadde added subscription class to Test project.
+It contains data like User Id, Subscription Name,Subscription Id and Payment Type.
 
