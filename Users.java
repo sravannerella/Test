@@ -32,14 +32,10 @@ public class User{
         return email;
     }    
 
-    public void addPlayList(String name, int duration) {
-        playlist.add(new playlist(name, duration));
+    public void addToPlayList(Song song) {
+        playlist.add(new playlist(song));
     }
-     public void getaddPlayList() {
-
-        return this.playlist.size();
-    }
-
+     
   }
 
 
