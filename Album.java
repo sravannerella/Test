@@ -1,12 +1,14 @@
+import java.util.UUID;
+impoert java.util.ArrayList;
 public class Album{
     private String albumId;
     private String albumName;
-    String artist;
-    LinkedList<Song> songs = new LinkedList<>();
+    private String artist;
     
+    ArrayList<Song> songs = new ArrayList<>();
     
-    public void setAlbumId(String albumId) {
-        this.albumId = albumId;
+    public Album(String albumName,String artist){
+         albumId = UUID.nameUUIDFromBytes((albumName+artist).getBytes()).toString();
     }
     public String getAlbumId() {
         return albumId;
@@ -17,10 +19,10 @@ public class Album{
     public String getAlbumName() {
         return albumName;
     }
-    public void addSong(String name, int duration) {
-        songs.add(new Song(name, duration));
+    public void addSong(String songTitle, String duration) {
+        songs.add(new Song(songTitle, duration));
     }
-    public void getSongsCount() {
+    public int getSongsCount() {
 
         return this.songs.size();
     }
